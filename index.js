@@ -7,9 +7,6 @@ const server = app.listen(2800, function () {
   console.log("server listening on port 2800,");
 });
 
-app.get("/", (req, res) => {
-  res.send("Home page");
-});
 
 app.use(express.static("public"));
 
